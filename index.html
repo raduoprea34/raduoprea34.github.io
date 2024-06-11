@@ -1,1 +1,31 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test App</title>
+    <script>
+        function joinMeeting() {
+            const customUrlScheme = "testapp://join_meeting";
+            window.location.href = customUrlScheme;
+        }
+
+        function downloadApp() {
+            const customUrlScheme = "testapp://join_meeting";
+            // Copy the URL to the clipboard
+            navigator.clipboard.writeText(customUrlScheme).then(() => {
+                // Redirect to the App Store
+                window.location.href = "https://apps.apple.com/md/app/adobe-connect-new/id1533425942";
+            }).catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+        <button onclick="joinMeeting()" style="font-size: 20px; padding: 10px 20px; margin: 10px;">Join the meeting</button>
+        <button onclick="downloadApp()" style="font-size: 20px; padding: 10px 20px; margin: 10px;">Download app</button>
+    </div>
+</body>
+</html>
