@@ -6,16 +6,16 @@
     <title>Test App</title>
     <script>
         function joinMeeting() {
-            const customUrlScheme = "connectprov2://?swfUrl%3Dhttps%253A%252F%252Fmy.adobeconnect.com%252Fcommon%252FmeetingAS3%252Fshell%252Fshell.swf%253FinternalTracking%253Dtrue%252Cstats.adobe.com%252Csstats.adobe.com%252Cadbadobeconnectnaprod%252C%252C1%252C295153%252C1252350700%252Cmeeting%252Cmeeting%252Cactive%252C1260896501%2526room%253D1252350700%253Bsession%253Dar1breezyt7ckhmkfvxcap6d%2526ticket%253Db73pi5ann57mctdt93rmkrzvdw27o9uk%2526proxy%253Dfalse%2526appInstance%253D295153%252F1252350700%252F%2526meetingName%253DChatPod%252BTesting%2526ott%253Dft2qebnz9u%2526css%253DqaWQdQh7TRM6qzF9Jgar%2521%2526aicc_url%253Dhttps%25253A%25252F%25252Fmy.adobeconnect.com%25252Fservlet%25252Fverify%25253Fsco-id%25253D1252350700%2526casCaptionURL%253D%2526host%253Dmy.adobeconnect.com%2526path%253D%25252Fchatpod-testing%25252F%2526proto%253Dtrue%2526sco-id%253D1252350700%2526ticket%253Db73pi5ann57mctdt93rmkrzvdw27o9uk%2526track-webrtc-recording-watch-duration%253Dtrue%2526transcript-id%253D1260924430%2526protos%253Drtmps%253A443%2526origins%253Darapp01%253A8506%252Carapp06%253A8506%2526edges%253Darfms2.adobeconnect.com%252Carfms5.adobeconnect.com%2526connectors%253Dpacor2ts01.adobeconnect.com%252Cpacor2ts08.adobeconnect.com%252Cpacor2ts06.adobeconnect.com%252Cpacor2ts02.adobeconnect.com%2526connector_proto%253Dwss%253A443%2526lang%253Den%2526account_id%253D295153%2526pacProxyFlag%253Dfalse%2526standardView%253Dfalse%2526enhancedAudio%253Dfalse%2526easeOfUseEnabled%253Dtrue%2526userRole%253Dviewer%2526isRoomPublic%253Dtrue%2526camDisabledFromCompliance%253Dfalse%2526voipDisabledFromCompliance%253Dfalse%2526telephonyEnabled%253Dfalse%26htmlUrl%3Dhttps%253A%252F%252Fmy.adobeconnect.com%252Fchatpod-testing%252F%253Flauncher%253Dfalse%26mode%3Dauto%26lang%3Den%26isHTMLCustomPodEnabled%3Dtrue%26showLoginLogo%3D1%26concurrentUserLimit%3D125%26enhancedNoiseSuppression%3Dtrue%26isOnPremise%3Dfalse%26standardView%3Dfalse%26enhancedAudio%3Dfalse%26isWebRTC%3Dtrue%26casClientApiUrl%3Dhttps%253A%252F%252Fnccor1.adobeconnect.com%252Fapi%252Fcas%252Findex%26zoneId%3D1";
+            const customUrlScheme = "connectprov2://google.com";
             window.location.href = customUrlScheme;
         }
 
         function downloadApp() {
-            const customUrlScheme = "testapp://join_meeting";
+            const customUrlScheme = "connectprov2://google.com";
             // Copy the URL to the clipboard
             navigator.clipboard.writeText(customUrlScheme).then(() => {
                 // Redirect to the App Store
-                window.location.href = "https://apps.apple.com/md/app/adobe-connect-new/id1533425942";
+                window.location.href = "https://apple.com";
             }).catch(err => {
                 console.error('Could not copy text: ', err);
             });
